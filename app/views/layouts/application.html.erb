@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SampleApp</title>
+  <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
+  <!-- yield отвечает за вставку содержимого каждой страницы в макет !-->
+  <!-- код далее отвечает за подключение стилей и JavaScript. 
+       csrf_meta_tags - это метод, предотвращающий подделку межсайтовых запросов -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
