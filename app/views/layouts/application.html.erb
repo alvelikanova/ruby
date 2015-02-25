@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
+  <title><%= full_title(yield(:title)) %></title>
   <!-- yield отвечает за вставку содержимого каждой страницы в макет !-->
   <!-- код далее отвечает за подключение стилей и JavaScript. 
        csrf_meta_tags - это метод, предотвращающий подделку межсайтовых запросов -->

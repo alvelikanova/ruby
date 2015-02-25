@@ -7,9 +7,9 @@ describe "Static pages" do
       visit '/static_pages/home'
       expect (page).should have_content('Sample App')
     end
-    it "should have the title 'Home'" do
+    it "should have the base title" do
       visit '/static_pages/home'
-      expect (page).should have_title("Ruby on Rails Tutorial Sample App | Home")
+      expect (page).should have_title("Ruby on Rails Tutorial Sample App")
     end
   end
 
